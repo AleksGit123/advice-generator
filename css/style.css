@@ -1,0 +1,96 @@
+body {
+    background-color: #1f2632;
+    min-height: 100vh;
+
+}
+
+.main_tag {
+    background-color: hsl(217, 19%, 24%);
+    width: min(90%, 540px);
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 34px; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 48px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 0px rgba(17, 17, 17, 0.53);
+}
+
+.font {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.advice_num,
+.advice_id {
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.advices {
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    margin-block: 24px 34px;
+}
+
+.separate_div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    /* background-color: red; */
+}
+
+.separate_div::before {
+    content: "";
+    display: grid;
+    place-content: center;
+    border-top: 1px solid hsl(217, 19%, 38%);
+    width: 100%;
+}
+
+.separate_div::after {
+    content: "";
+    display: grid;
+    place-content: center;
+    border-top: 1px solid hsl(217, 19%, 38%);
+    width: 100%;
+}
+
+.fa-pause {
+    font-size: 24px;
+    margin-inline: 15px;
+}
+
+.dice {
+    font-size: 24px;
+}
+
+.generate_btn {
+    width: 60px;
+    height: 60px;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    padding: 18px;
+    position: absolute;
+    bottom: -32px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.generate_btn:hover {
+    box-shadow: 0px 0px 10px 0px hsl(150, 100%, 66%),
+        0px 0px 20px 0px hsl(150, 100%, 66%, 0.7),
+        0px 0px 30px 0px hsl(150, 100%, 66%, 0.5);
+}
